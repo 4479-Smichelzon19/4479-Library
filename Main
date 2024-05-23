@@ -8,7 +8,7 @@ local RayfieldLibrary = {
 	Flags = {},
 	Theme = {
 		Default = {
-			TextFont = "Default", -- Default will use the various font faces used across Rayfield
+			TextFont = "Naughty", -- Default will use the various font faces used across Rayfield
 			TextColor = Color3.fromRGB(240, 240, 240),
 
 			Background = Color3.fromRGB(25, 25, 25),
@@ -861,7 +861,7 @@ end
 function RayfieldLibrary:CreateWindow(Settings)
 	local Passthrough = false
 	Topbar.Title.Text = Settings.Name
-	Main.Size = UDim2.new(0, 350, 0, 230)
+	Main.Size = UDim2.new(0, 450, 0, 260)
 	Main.Visible = true
 	Main.BackgroundTransparency = 1
 	LoadingFrame.Title.TextTransparency = 1
@@ -2471,3 +2471,4 @@ end
 task.delay(3.5, RayfieldLibrary.LoadConfiguration, RayfieldLibrary)
 
 return RayfieldLibrary
+
